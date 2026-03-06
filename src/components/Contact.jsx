@@ -1,4 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
+
+// EmailJS credentials
+const SERVICE_ID = 'service_2thd0m8'
+const TEMPLATE_ID = 'template_wnk81rr'
+const PUBLIC_KEY = 'TA7z65qqAapOL2VxY'
 
 const contactLinks = [
   {
@@ -27,7 +33,12 @@ const contactLinks = [
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState('idle') // idle | sending | sent
+  const [status, setStatus] = useState('idle')
+
+  // Initialise EmailJS once on mount
+  useEffect(() => {
+    emailjs.init({ publicKey: PUBLIC_KEY })
+  }, [])
 
   const validate = () => {
     const e = {}
@@ -44,13 +55,30 @@ export default function Contact() {
     setErrors(er => ({ ...er, [e.target.name]: '' }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
     setStatus('sending')
-    setTimeout(() => { setStatus('sent'); setForm({ name: '', email: '', subject: '', message: '' }) }, 1500)
-    setTimeout(() => setStatus('idle'), 7000)
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }
+      )
+      setStatus('sent')
+      setForm({ name: '', email: '', subject: '', message: '' })
+      setTimeout(() => setStatus('idle'), 7000)
+    } catch (err) {
+      console.error('EmailJS error:', err)
+      setStatus('idle')
+      alert('Failed to send message. Please try again or email me directly at dasarinavya1704@gmail.com')
+    }
   }
 
   return (
