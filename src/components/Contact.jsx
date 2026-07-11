@@ -35,11 +35,6 @@ export default function Contact() {
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState('idle')
 
-  // Initialise EmailJS once on mount
-  useEffect(() => {
-    emailjs.init({ publicKey: PUBLIC_KEY })
-  }, [])
-
   const validate = () => {
     const e = {}
     if (!form.name.trim()) e.name = 'Name is required.'
@@ -69,7 +64,8 @@ export default function Contact() {
           email: form.email,
           subject: form.subject,
           message: form.message,
-        }
+        },
+        PUBLIC_KEY
       )
       setStatus('sent')
       setForm({ name: '', email: '', subject: '', message: '' })
