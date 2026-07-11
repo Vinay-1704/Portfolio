@@ -112,7 +112,7 @@ export default function Hero() {
             <img
               src={profileImg}
               alt="Dasari Vinay — Python Developer"
-              className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] rounded-full object-cover object-top border-4 border-white dark:border-gray-900 shadow-2xl"
+              className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] rounded-full object-cover border-4 border-white dark:border-gray-900 shadow-2xl"
             />
           </div>
 
