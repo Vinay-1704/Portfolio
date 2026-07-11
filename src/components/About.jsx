@@ -32,8 +32,8 @@ export default function About() {
             <p>
               Hi! I'm <span className="font-semibold text-slate-900 dark:text-white">Dasari Vinay</span>, a 3rd-year CSE student at{' '}
               <span className="text-indigo-500 font-semibold">Vignan's Institute of Information Technology, Visakhapatnam</span>.
-              I'm deeply passionate about creating impactful, scalable web applications using the{' '}
-              <span className="font-semibold text-slate-800 dark:text-slate-200">MERN stack</span>.
+              I'm deeply passionate about creating impactful, scalable web applications and{' '}
+              <span className="font-semibold text-slate-800 dark:text-slate-200">AI-driven solutions</span>.
             </p>
             <p>
               My journey in software development started with curiosity about how websites work and quickly
@@ -54,7 +54,7 @@ export default function About() {
                 { icon: 'fa-calendar-alt', label: 'Year', value: '3rd Year, Sem 2' },
                 { icon: 'fa-map-marker-alt', label: 'Location', value: 'Visakhapatnam, AP' },
                 { icon: 'fa-briefcase', label: 'Status', value: 'Open to Opportunities' },
-                { icon: 'fa-code', label: 'Focus', value: 'MERN Stack' },
+                { icon: 'fa-code', label: 'Focus', value: 'Python & AI/ML' },
               ].map(f => (
                 <div key={f.label} className="flex items-start gap-3 glass-card p-3 shadow-sm">
                   <i className={`fas ${f.icon} text-indigo-500 mt-0.5 w-4 flex-shrink-0`}></i>
@@ -70,7 +70,7 @@ export default function About() {
           {/* Stat cards */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { num: '12+', label: 'Technologies', icon: 'fa-layer-group', color: 'from-indigo-500 to-violet-600' },
+              { num: '15+', label: 'Technologies', icon: 'fa-layer-group', color: 'from-indigo-500 to-violet-600' },
               { num: '1', label: 'Major Project', icon: 'fa-rocket', color: 'from-cyan-500 to-blue-600' },
               { num: '8.9', label: 'B.Tech CGPA', icon: 'fa-graduation-cap', color: 'from-amber-400 to-orange-500' },
               { num: '2027', label: 'Graduation', icon: 'fa-graduation-cap', color: 'from-rose-500 to-pink-600' },

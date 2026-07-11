@@ -1,26 +1,26 @@
 const features = [
-  'Shipment posting and bidding system',
-  'Real-time driver and shipment tracking',
-  'Real-time WebSocket-based chat',
-  'Driver ratings and performance analytics',
-  'JWT-secured authentication',
-  'Responsive dashboards',
-  'Dark / light theme toggle',
-  'Toast notifications and modals',
+  'Shipment posting, driver bidding, and real-time tracking',
+  'WebSocket-based live chat functionality',
+  'AI-powered driver recommendation',
+  'Machine learning freight cost prediction',
+  'Shipment delay prediction and ETA estimation',
+  'Digital proof of delivery with signature and PDF generation',
+  'JWT authentication and secure REST APIs',
+  'Analytics dashboards for operational insights',
 ]
 
 const techStack = {
-  Frontend: ['React.js', 'React Router', 'CSS'],
-  Backend: ['Node.js', 'Express.js'],
-  Database: ['MongoDB', 'Mongoose'],
-  Other: ['JWT Auth', 'REST APIs', 'WebSocket'],
+  Frontend: ['React.js', 'React Router', 'Tailwind CSS'],
+  Backend: ['FastAPI', 'Python', 'REST APIs'],
+  Database: ['PostgreSQL', 'SQLAlchemy'],
+  AI_ML: ['Machine Learning', 'Predictive Analytics', 'scikit-learn'],
 }
 
 const stackColors = {
   Frontend: 'from-indigo-500 to-violet-600',
   Backend: 'from-cyan-500 to-blue-600',
   Database: 'from-emerald-500 to-green-600',
-  Other: 'from-amber-500 to-orange-600',
+  AI_ML: 'from-amber-500 to-orange-600',
 }
 
 export default function Projects() {
@@ -42,7 +42,7 @@ export default function Projects() {
                 <i className="fas fa-truck text-4xl text-white"></i>
               </div>
               <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">CargoMate</h3>
-              <p className="text-white/75 text-sm mt-1">Logistics & Transportation Platform</p>
+              <p className="text-white/75 text-sm mt-1">AI-Powered Logistics & Transportation Platform</p>
             </div>
             {/* Action links */}
             <div className="absolute top-4 right-4 flex gap-2">
@@ -63,10 +63,9 @@ export default function Projects() {
             {/* Left: Description + Features */}
             <div>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                CargoMate is a full-stack logistics platform connecting <strong className="text-slate-800 dark:text-slate-200">shippers and drivers</strong> for efficient freight transportation.
-                Shippers can post shipments; drivers can bid on them. The platform features real-time tracking,
-                in-app chat, driver ratings, and analytics dashboards, all wrapped in a clean,
-                responsive UI with dark/light mode support.
+                CargoMate is an AI-powered full-stack logistics platform connecting <strong className="text-slate-800 dark:text-slate-200">shippers and drivers</strong> for efficient freight transportation.
+                It streamlines shipment posting, bidding, and real-time tracking, while leveraging machine learning
+                for smart driver recommendations, freight cost predictions, and accurate ETA estimations.
               </p>
 
               <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-widest mb-3">
@@ -107,7 +106,7 @@ export default function Projects() {
               <div className="mt-6 pt-6 border-t border-slate-200 dark:border-gray-700">
                 <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-3">Tools Used</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['VS Code', 'MongoDB Compass', 'Postman', 'Browser DevTools'].map(t => (
+                  {['VS Code', 'Git/GitHub', 'Postman', 'Jupyter Notebook'].map(t => (
                     <span key={t} className="px-2 py-1 text-xs rounded-md bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-slate-400 font-medium">{t}</span>
                   ))}
                 </div>

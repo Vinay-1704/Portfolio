@@ -38,7 +38,8 @@ function useTyped(phrases) {
 
 export default function Hero() {
   const typed = useTyped([
-    'MERN Stack Developer',
+    'Python Developer',
+    'AI Developer',
     'Problem Solver',
   ])
 
@@ -68,8 +69,8 @@ export default function Hero() {
 
           <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8 max-w-lg text-base">
             3rd year <strong className="text-slate-800 dark:text-slate-200">CSE student at VIIT, Visakhapatnam</strong> passionate about
-            building scalable MERN stack applications. Currently crafting{' '}
-            <span className="text-indigo-500 font-semibold">CargoMate</span> — a real-time logistics platform.
+            building scalable web applications and AI-driven solutions. Currently crafting{' '}
+            <span className="text-indigo-500 font-semibold">CargoMate</span> — an AI-powered logistics platform.
             Open to exciting internship and junior developer opportunities.
           </p>
 
@@ -88,7 +89,7 @@ export default function Hero() {
             {[
               { icon: 'fab fa-github', href: 'https://github.com/Vinay-1704', label: 'GitHub' },
               { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/dasari-vinay1704', label: 'LinkedIn' },
-              { icon: 'fas fa-envelope', href: 'mailto:dasarinavya1704@gmail.com', label: 'Email' },
+              { icon: 'fas fa-envelope', href: 'mailto:23l31ao553@gmail.com', label: 'Email' },
             ].map(s => (
               <a key={s.label} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer" aria-label={s.label}
@@ -110,7 +111,7 @@ export default function Hero() {
             </div>
             <img
               src={profileImg}
-              alt="Dasari Vinay – MERN Stack Developer"
+              alt="Dasari Vinay — Python Developer"
               className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] rounded-full object-cover border-4 border-white dark:border-gray-900 shadow-2xl"
             />
           </div>

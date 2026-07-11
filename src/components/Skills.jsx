@@ -2,48 +2,47 @@ import { useEffect, useRef } from 'react'
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    icon: 'fa-palette',
-    color: 'from-indigo-500 to-violet-600',
-    skills: [
-      { name: 'HTML5', icon: 'devicon-html5-plain colored', level: 92 },
-      { name: 'CSS3', icon: 'devicon-css3-plain colored', level: 88 },
-      { name: 'JavaScript', icon: 'devicon-javascript-plain colored', level: 85 },
-      { name: 'React.js', icon: 'devicon-react-original colored', level: 82 },
-    ],
-  },
-  {
-    title: 'Backend',
-    icon: 'fa-server',
-    color: 'from-cyan-500 to-blue-600',
-    skills: [
-      { name: 'Node.js', icon: 'devicon-nodejs-plain colored', level: 80 },
-      { name: 'Express.js', icon: 'devicon-express-original', level: 78 },
-      { name: 'MongoDB', icon: 'devicon-mongodb-plain colored', level: 80 },
-      { name: 'SQL', icon: 'devicon-mysql-plain colored', level: 70 },
-    ],
-  },
-  {
-    title: 'Programming',
+    title: 'Languages',
     icon: 'fa-code',
     color: 'from-amber-500 to-orange-600',
     skills: [
+      { name: 'Python', icon: 'devicon-python-plain colored', level: 85 },
       { name: 'Java', icon: 'devicon-java-plain colored', level: 85 },
-      { name: 'DSA', icon: 'fas fa-sitemap', level: 78 },
-      { name: 'Python', icon: 'devicon-python-plain colored', level: 70 },
+      { name: 'JavaScript', icon: 'devicon-javascript-plain colored', level: 85 },
       { name: 'C', icon: 'devicon-c-plain colored', level: 72 },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Frontend & Backend',
+    icon: 'fa-layer-group',
+    color: 'from-indigo-500 to-violet-600',
+    skills: [
+      { name: 'React.js', icon: 'devicon-react-original colored', level: 82 },
+      { name: 'FastAPI', icon: 'devicon-fastapi-plain colored', level: 80 },
+      { name: 'Node.js', icon: 'devicon-nodejs-plain colored', level: 80 },
+      { name: 'Express.js', icon: 'devicon-express-original', level: 78 },
+    ],
+  },
+  {
+    title: 'Data & AI',
+    icon: 'fa-brain',
+    color: 'from-emerald-500 to-green-600',
+    skills: [
+      { name: 'PostgreSQL', icon: 'devicon-postgresql-plain colored', level: 80 },
+      { name: 'MongoDB', icon: 'devicon-mongodb-plain colored', level: 80 },
+      { name: 'Machine Learning', icon: 'fas fa-robot', level: 75 },
+      { name: 'Predictive Analytics', icon: 'fas fa-chart-line', level: 70 },
+    ],
+  },
+  {
+    title: 'Tools & Concepts',
     icon: 'fa-wrench',
     color: 'from-rose-500 to-pink-600',
     skills: [
-      { name: 'Git', icon: 'devicon-git-plain colored', level: 85 },
-      { name: 'GitHub', icon: 'devicon-github-original', level: 85 },
-      { name: 'VS Code', icon: 'devicon-vscode-plain colored', level: 90 },
-      { name: 'Postman', icon: 'devicon-postman-plain colored', level: 75 },
-      { name: 'MongoDB Compass', icon: 'devicon-mongodb-plain colored', level: 78 },
+      { name: 'Git & GitHub', icon: 'devicon-github-original', level: 85 },
+      { name: 'Linux', icon: 'devicon-linux-plain', level: 75 },
+      { name: 'WebSockets', icon: 'fas fa-network-wired', level: 80 },
+      { name: 'Data Structures', icon: 'fas fa-sitemap', level: 78 },
     ],
   },
 ]

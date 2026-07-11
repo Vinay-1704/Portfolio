@@ -43,7 +43,7 @@ export default function Footer() {
               {[
                 { icon: 'fab fa-github', href: 'https://github.com/Vinay-1704', label: 'GitHub', color: 'hover:bg-gray-700' },
                 { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/dasari-vinay1704', label: 'LinkedIn', color: 'hover:bg-blue-600' },
-                { icon: 'fas fa-envelope', href: 'mailto:dasarinavya1704@gmail.com', label: 'Email', color: 'hover:bg-indigo-600' },
+                { icon: 'fas fa-envelope', href: 'mailto:23l31ao553@gmail.com', label: 'Email', color: 'hover:bg-indigo-600' },
                 { icon: 'fab fa-twitter', href: 'https://twitter.com/dasari_vinay', label: 'Twitter', color: 'hover:bg-sky-500' },
               ].map(s => (
                 <a key={s.label} href={s.href}
