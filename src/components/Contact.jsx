@@ -65,7 +65,7 @@ export default function Contact() {
           subject: form.subject,
           message: form.message,
         },
-        PUBLIC_KEY
+        { publicKey: PUBLIC_KEY }
       )
       setStatus('sent')
       setForm({ name: '', email: '', subject: '', message: '' })
