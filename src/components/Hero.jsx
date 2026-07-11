@@ -39,7 +39,7 @@ function useTyped(phrases) {
 export default function Hero() {
   const typed = useTyped([
     'Python Developer',
-    'AI Developer',
+    'Aspiring AI Developer',
     'Problem Solver',
   ])
 
