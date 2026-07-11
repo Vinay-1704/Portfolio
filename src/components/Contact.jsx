@@ -10,8 +10,8 @@ const contactLinks = [
   {
     icon: 'fas fa-envelope',
     label: 'Email',
-    value: '23l31ao553@gmail.com',
-    href: 'mailto:23l31ao553@gmail.com',
+    value: 'dasarinavya1704@gmail.com',
+    href: 'mailto:dasarinavya1704@gmail.com',
     color: 'from-indigo-500 to-violet-600',
   },
   {
@@ -77,7 +77,7 @@ export default function Contact() {
     } catch (err) {
       console.error('EmailJS error:', err)
       setStatus('idle')
-      alert('Failed to send message. Please try again or email me directly at 23l31ao553@gmail.com')
+      alert('Failed to send message. Please try again or email me directly at dasarinavya1704@gmail.com')
     }
   }
 

@@ -89,7 +89,7 @@ export default function Hero() {
             {[
               { icon: 'fab fa-github', href: 'https://github.com/Vinay-1704', label: 'GitHub' },
               { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/dasari-vinay1704', label: 'LinkedIn' },
-              { icon: 'fas fa-envelope', href: 'mailto:23l31ao553@gmail.com', label: 'Email' },
+              { icon: 'fas fa-envelope', href: 'mailto:dasarinavya1704@gmail.com', label: 'Email' },
             ].map(s => (
               <a key={s.label} href={s.href} target={s.href.startsWith('http') ? '_blank' : undefined}
                 rel="noopener noreferrer" aria-label={s.label}
